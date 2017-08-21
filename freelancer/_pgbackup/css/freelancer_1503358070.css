@@ -140,7 +140,7 @@ header .intro-text .skills {
 
     color: rgba(0, 0, 0, 0);
 
-    background-image: url('../img/white_logo_transparent_background.png');
+    background-image: url('../img/white_logo_dark_background.jpg');
 
     background-position: inherit;
 
@@ -156,11 +156,13 @@ header .intro-text .skills {
 
     color: rgba(0, 0, 0, 0);
 
-    background-image: url('../img/white_logo_dark_background.jpg');
+    background-image: url('../img/white_logo_transparent_background.png');
 
     background-position: inherit;
 
-    background-size: contain;
+    background-attachment: inherit;
+
+    background-origin: content-box;
 
     background-repeat: no-repeat;
     }
