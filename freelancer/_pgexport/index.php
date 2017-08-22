@@ -58,7 +58,7 @@ get_header(); ?>
                 ?>
                 <?php $portfolio = new WP_Query( $portfolio_args ); ?>
                 <?php if ( $portfolio->have_posts() ) : ?>
-                    <section id="portfolio" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/img/Dark-Treetops.jpg');background-attachment: fixed;background-size: cover">
+                    <section id="portfolio">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
