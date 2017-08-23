@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Freelacer" wp-site-theme-slug="freelancer" wp-site-themes-folder="D:\OneDriveBusiness\OneDrive - Wendigo\Git\Github\master\pgfreelancerwp">
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Freelacer" wp-site-theme-slug="freelancer" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/pgwordpress/wp-content/themes/freelancer" wp-site-preview-url="http://wptest">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,12 +21,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Akronim:400">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bangers:400">
     </head>
     <body id="page-top" class="index" wp-site-content>
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" data-pg-collapsed>
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -61,7 +59,7 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="" wp-loop>
-            <header>
+            <header data-pg-collapsed>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -94,7 +92,7 @@
                                 <img src="img/portfolio/cabin.png" class="img-responsive" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-attr-class="img-responsive">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -104,7 +102,7 @@
                                 <img src="img/portfolio/cake.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -114,7 +112,7 @@
                                 <img src="img/portfolio/circus.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
                             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -124,7 +122,7 @@
                                 <img src="img/portfolio/game.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -134,7 +132,7 @@
                                 <img src="img/portfolio/safe.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -156,19 +154,19 @@
                         </div>
                     </div>
                     <php>
-                    //take the content and split it into array
-                    $columns = explode( "<hr />", get_the_content() );
-                    
-                    //if at least one column set $column_1 variable
-                    if(count($columns) > 0) {
-                    	$column_1 = $columns[0];
-                    }
-                    
-                    //if the second column is set, put it into the $column_2 variable
-                    if(count($columns) > 1) {
-                    	$column_2 = $columns[1];
-                    }
-                    </php>
+                                                                                                                                                                        //take the content and split it into array
+                                                                                                                                                                        $columns = explode( "<hr />", get_the_content() );
+                                                                                                                                                                        
+                                                                                                                                                                        //if at least one column set $column_1 variable
+                                                                                                                                                                        if(count($columns) > 0) {
+                                                                                                                                                                        	$column_1 = $columns[0];
+                                                                                                                                                                        }
+                                                                                                                                                                        
+                                                                                                                                                                        //if the second column is set, put it into the $column_2 variable
+                                                                                                                                                                        if(count($columns) > 1) {
+                                                                                                                                                                        	$column_2 = $columns[1];
+                                                                                                                                                                        }
+                                                                                                                                                                        </php>
                     <div class="row">
                         <div class="col-lg-4 col-lg-offset-2" wp-call-function="echo $column_1" wp-call-function-set="content">
                             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
@@ -289,7 +287,7 @@
         <!-- Contact Section -->
         <!-- Footer -->
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-        <div class="scroll-top page-scroll visible-xs visble-sm">
+        <div class="scroll-top page-scroll visible-xs visble-sm" data-pg-collapsed>
             <a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
         <!-- Portfolio Modals -->
@@ -329,7 +327,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -365,7 +363,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -401,7 +399,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -437,7 +435,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -473,7 +471,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
