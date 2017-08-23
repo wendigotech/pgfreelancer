@@ -1,0 +1,43 @@
+.navbar-custom {
+  background-color: rgba(61, 179, 248, 0.7)
+}
+.navbar-custom-brand {
+}@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+
+    background-image: url('img/white_logo_transparent_background.png');
+
+    background-position: inherit;
+
+    background-size: cover;
+
+    color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 7px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+
+    color: rgba(0, 0, 0, 0);
+
+    background-image: url('img/logo_transparent_background.png');
+
+    background-position: center center;
+
+    background-size: contain;
+    }
+}.navbar-default .navbar-brand{  color: rgba(0, 0, 0, 0);background-image: url('img/white_logo_transparent_background.png');background-position: center center;background-size: contain}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand.pg-state-hover,.navbar-default .navbar-brand.pg-state-hover,.navbar-default .navbar-brand.pg-state-focus{color:rgba(24, 188, 156, 0);background-image: url('img/logo_white_background_3D_new.png')}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a.pg-state-hover,.navbar-default .navbar-nav>li>a.pg-state-hover,.navbar-default .navbar-nav>li>a.pg-state-focus{color:#000000;background-color:transparent}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:transparent;text-align: center;font-family: bangers}
