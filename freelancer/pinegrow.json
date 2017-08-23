@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-{"files":{"index.html":{"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.asset.manager","pg.project.items","bs3.3.7","pg.html","pg.components"],"last_page_width":1024}},"breakpoints":["480px","768px","992px","1200px"],"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.asset.manager","pg.project.items","bs3.3.7","pg.html","pg.components"],"file-picker-copy-folder":"D:\\OneDriveBusiness\\OneDrive - Wendigo\\Git\\Github\\master\\pgfreelancer\\freelancer\\img"}
-=======
-{"files":{"index.html":{"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.asset.manager","pg.project.items","bs3.3.7","pg.html","pg.components"],"last_page_width":694}},"breakpoints":["480px","768px","992px","1200px"],"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.asset.manager","pg.project.items","bs3.3.7","pg.html","pg.components"],"file-picker-copy-folder":"D:\\OneDriveBusiness\\OneDrive - Wendigo\\Git\\Github\\master\\pgfreelancer\\freelancer\\img"}
->>>>>>> parent of 1c5c3e2... Added portfolio bkg
-=======
-{"files":{"index.html":{"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.project.items","pg.asset.manager","bs3.3.7","pg.html","pg.components"],"last_page_width":1024}},"breakpoints":["480px","768px","992px","1200px"],"frameworks":["freelancer","pg.fontawesome","pg.insight.events","wordpress.pinegrow","pg.code-validator","pg.project.items","pg.asset.manager","bs3.3.7","pg.html","pg.components"]}
->>>>>>> parent of 252b3b0... Navbar Logo + Style
+{"files":{"index.html":{"frameworks":["wordpress.pinegrow","fontawesome","bs3.3.1","html"]}},"breakpoints":[480,768,992,1200]}
