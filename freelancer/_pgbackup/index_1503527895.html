@@ -37,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="#page-top" wp-href="url" img resposive="">
+                    <a class="navbar-brand" href="#page-top" wp-site-name wp-href="url">
                         Harold Pine                    </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -236,6 +236,53 @@
                     </div>
                 </div>
             </section>
+            <footer class="text-center">
+                <div class="footer-above">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col col-md-4">
+                                <h3 wp-meta-value wp-meta-value-key="footer1_title">Location</h3>
+                                <p wp-meta-value wp-meta-value-key="footer1_text">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3 wp-meta-value wp-meta-value-key="footer2_title">Around the Web</h3>
+                                <ul class="list-inline">
+                                    <li wp-if-get-post-meta="|social_facebook">
+                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_facebook" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-facebook"></i></a>
+                                    </li>
+                                    <li wp-if-get-post-meta="|social_google">
+                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_google" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-google-plus"></i></a>
+                                    </li>
+                                    <li wp-if-get-post-meta="|social_twitter">
+                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_twitter" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-twitter"></i></a>
+                                    </li>
+                                    <li wp-if-get-post-meta="|social_twitter">
+                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_linkedin" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-linkedin"></i></a>
+                                    </li>
+                                    <li wp-if-get-post-meta="|social_dribbble">
+                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_dribbble" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-dribbble"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3 wp-meta-value wp-meta-value-key="footer3_title">About Freelancer</h3>
+                                <p wp-meta-value wp-meta-value-key="footer3_text">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-below">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                Copyright &copy; 
+                                <span wp-site-name wp-site-name-set="element">Your Website</span> 
+                                <span wp-call-function="echo date( 'Y' )">2014</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
         <!-- Header -->
         <!-- Portfolio Grid Section -->
@@ -243,53 +290,6 @@
         <!-- Contact Section -->
         <!-- Footer -->
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-        <footer class="text-center">
-            <div class="footer-above">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col col-md-4">
-                            <h3 wp-meta-value wp-meta-value-key="footer1_title">Location</h3>
-                            <p wp-meta-value wp-meta-value-key="footer1_text">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                        </div>
-                        <div class="footer-col col-md-4">
-                            <h3 wp-meta-value wp-meta-value-key="footer2_title">Around the Web</h3>
-                            <ul class="list-inline">
-                                <li wp-if-get-post-meta="|social_facebook">
-                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_facebook" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-facebook"></i></a>
-                                </li>
-                                <li wp-if-get-post-meta="|social_google">
-                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_google" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-google-plus"></i></a>
-                                </li>
-                                <li wp-if-get-post-meta="|social_twitter">
-                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_twitter" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-twitter"></i></a>
-                                </li>
-                                <li wp-if-get-post-meta="|social_twitter">
-                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_linkedin" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-linkedin"></i></a>
-                                </li>
-                                <li wp-if-get-post-meta="|social_dribbble">
-                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_dribbble" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-dribbble"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-col col-md-4">
-                            <h3 wp-meta-value wp-meta-value-key="footer3_title">About Freelancer</h3>
-                            <p wp-meta-value wp-meta-value-key="footer3_text">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-below">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            Copyright &copy; 
-                            <span wp-site-name wp-site-name-set="element">Your Website</span> 
-                            <span wp-call-function="echo date( 'Y' )">2014</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <div class="scroll-top page-scroll visible-xs visble-sm">
             <a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
