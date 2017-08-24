@@ -45,7 +45,7 @@
     border: 0;border-bottom-left-radius: 52px;border-bottom-right-radius: 50px;
 }header {
     text-align: center;
-    color: #fff;background-color: #3db3f8;font-family: bangers;box-shadow-type-0: outside;box-shadow: -1px 9px 75px 41px #3db3f8;
+    color: #fff;background-color: #3db3f8;font-family: bangers;box-shadow-type-0: inside;
 }header .intro-text .name {
     display: block;
     text-transform: uppercase;
