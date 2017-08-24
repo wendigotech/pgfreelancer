@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Freelacer" wp-site-theme-slug="freelancer" wp-site-themes-folder="/Users/Matjaz/Dropbox/Development/DVWeb/DV/Pinegrow/lab/pgwordpress/wp-content/themes/freelancer" wp-site-preview-url="http://wptest">
+<html lang="en" wp-site wp-site-is-master-page wp-site-theme-name="Freelacer" wp-site-theme-slug="freelancer" wp-site-themes-folder="D:\OneDriveBusiness\OneDrive - Wendigo\Git\Github\master\pgfreelancerwp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +8,26 @@
         <meta name="author" content="">
         <title>Freelancer - Start Bootstrap Theme</title>
         <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="css/freelancer.css" rel="stylesheet">
         <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <link href="http://fonts.googleapis.com/css?family=Akronim:400" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="custom.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers:400" rel="stylesheet" type="text/css">
     </head>
     <body id="page-top" class="index" wp-site-content>
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top" data-pg-collapsed>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -34,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#page-top" wp-site-name wp-href="url">
+                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="#page-top" wp-href="url" img resposive="">
                         Harold Pine                    </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,14 +62,14 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="" wp-loop>
-            <header data-pg-collapsed>
+            <header>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <img class="img-responsive" src="img/profile.png" alt="" wp-the-post-thumbnail>
                             <div class="intro-text">
                                 <span class="name" wp-site-name>Harold Pine</span>
-                                <hr class="star-light">
+                                <hr class="star-primary">
                                 <span class="skills" wp-site-desc>I make wooden websites.</span>
                             </div>
                         </div>
@@ -92,7 +95,7 @@
                                 <img src="img/portfolio/cabin.png" class="img-responsive" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-attr-class="img-responsive">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -102,7 +105,7 @@
                                 <img src="img/portfolio/cake.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -112,7 +115,7 @@
                                 <img src="img/portfolio/circus.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
                             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -122,7 +125,7 @@
                                 <img src="img/portfolio/game.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -132,7 +135,7 @@
                                 <img src="img/portfolio/safe.png" class="img-responsive" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item" data-pg-collapsed wp-loop-skip>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -150,23 +153,23 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <h2 wp-the-title>Another amazing post</h2>
-                            <hr class="star-light">
+                            <hr class="star-primary">
                         </div>
                     </div>
                     <php>
-                                                                                                                                                                        //take the content and split it into array
-                                                                                                                                                                        $columns = explode( "<hr />", get_the_content() );
-                                                                                                                                                                        
-                                                                                                                                                                        //if at least one column set $column_1 variable
-                                                                                                                                                                        if(count($columns) > 0) {
-                                                                                                                                                                        	$column_1 = $columns[0];
-                                                                                                                                                                        }
-                                                                                                                                                                        
-                                                                                                                                                                        //if the second column is set, put it into the $column_2 variable
-                                                                                                                                                                        if(count($columns) > 1) {
-                                                                                                                                                                        	$column_2 = $columns[1];
-                                                                                                                                                                        }
-                                                                                                                                                                        </php>
+                    //take the content and split it into array
+                    $columns = explode( "<hr />", get_the_content() );
+                    
+                    //if at least one column set $column_1 variable
+                    if(count($columns) > 0) {
+                    	$column_1 = $columns[0];
+                    }
+                    
+                    //if the second column is set, put it into the $column_2 variable
+                    if(count($columns) > 1) {
+                    	$column_2 = $columns[1];
+                    }
+                    </php>
                     <div class="row">
                         <div class="col-lg-4 col-lg-offset-2" wp-call-function="echo $column_1" wp-call-function-set="content">
                             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
@@ -233,53 +236,6 @@
                     </div>
                 </div>
             </section>
-            <footer class="text-center">
-                <div class="footer-above">
-                    <div class="container">
-                        <div class="row">
-                            <div class="footer-col col-md-4">
-                                <h3 wp-meta-value wp-meta-value-key="footer1_title">Location</h3>
-                                <p wp-meta-value wp-meta-value-key="footer1_text">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                            </div>
-                            <div class="footer-col col-md-4">
-                                <h3 wp-meta-value wp-meta-value-key="footer2_title">Around the Web</h3>
-                                <ul class="list-inline">
-                                    <li wp-if-get-post-meta="|social_facebook">
-                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_facebook" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-facebook"></i></a>
-                                    </li>
-                                    <li wp-if-get-post-meta="|social_google">
-                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_google" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-google-plus"></i></a>
-                                    </li>
-                                    <li wp-if-get-post-meta="|social_twitter">
-                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_twitter" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-twitter"></i></a>
-                                    </li>
-                                    <li wp-if-get-post-meta="|social_twitter">
-                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_linkedin" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-linkedin"></i></a>
-                                    </li>
-                                    <li wp-if-get-post-meta="|social_dribbble">
-                                        <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_dribbble" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-col col-md-4">
-                                <h3 wp-meta-value wp-meta-value-key="footer3_title">About Freelancer</h3>
-                                <p wp-meta-value wp-meta-value-key="footer3_text">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-below">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                Copyright &copy; 
-                                <span wp-site-name wp-site-name-set="element">Your Website</span> 
-                                <span wp-call-function="echo date( 'Y' )">2014</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
         <!-- Header -->
         <!-- Portfolio Grid Section -->
@@ -287,7 +243,54 @@
         <!-- Contact Section -->
         <!-- Footer -->
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-        <div class="scroll-top page-scroll visible-xs visble-sm" data-pg-collapsed>
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-4">
+                            <h3 wp-meta-value wp-meta-value-key="footer1_title">Location</h3>
+                            <p wp-meta-value wp-meta-value-key="footer1_text">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3 wp-meta-value wp-meta-value-key="footer2_title">Around the Web</h3>
+                            <ul class="list-inline">
+                                <li wp-if-get-post-meta="|social_facebook">
+                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_facebook" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li wp-if-get-post-meta="|social_google">
+                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_google" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-google-plus"></i></a>
+                                </li>
+                                <li wp-if-get-post-meta="|social_twitter">
+                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_twitter" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li wp-if-get-post-meta="|social_twitter">
+                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_linkedin" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                                <li wp-if-get-post-meta="|social_dribbble">
+                                    <a href="#" class="btn-social btn-outline" wp-meta-value-attr wp-meta-value-attr-key="social_dribbble" wp-meta-value-attr-attribute="href"><i class="fa fa-fw fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3 wp-meta-value wp-meta-value-key="footer3_title">About Freelancer</h3>
+                            <p wp-meta-value wp-meta-value-key="footer3_text">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; 
+                            <span wp-site-name wp-site-name-set="element">Your Website</span> 
+                            <span wp-call-function="echo date( 'Y' )">2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-top page-scroll visible-xs visble-sm">
             <a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
         <!-- Portfolio Modals -->
@@ -327,7 +330,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -363,7 +366,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -399,7 +402,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -435,7 +438,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -471,7 +474,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed wp-loop-skip>
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" wp-loop-skip>
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
