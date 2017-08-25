@@ -74,6 +74,7 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <?php while ( have_posts() ) : the_post(); ?>
+                                    <?php $portfolio_item_number = 0; ?>
                                     <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                                         <div class="col-sm-4 portfolio-item">
                                             <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
@@ -82,11 +83,17 @@ get_header(); ?>
                                                         <i class="fa fa-search-plus fa-3x"></i>
                                                     </div>
                                                 </div>
-                                                <?php the_post_thumbnail( null, array(
+                                                <?php
+                                                    if ( has_post_thumbnail() ) {
+                                                        the_post_thumbnail( null, array(
                                                         'class' => 'img-responsive'
-                                                ) ); ?>
+                                                    ) );
+                                                    }
+                                                 ?>
                                             </a>
                                         </div>
+                                        <?php $portfolio_item_number++; ?>
+                                        <?php if( $portfolio_item_number % 3 == 0 ) echo '<div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>'; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php endwhile; ?>
