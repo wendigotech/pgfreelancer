@@ -80,12 +80,84 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2>Portfolio</h2>
+                            <h2>Portfolio 1</h2>
                             <hr class="star-primary">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4 portfolio-item" wp-post-type="portfolio_item" wp-post-type-name="Portfolio items" wp-post-type-name-singular="Portfolio item" wp-post-type-public="true" wp-post-type-supports="title,editor,author,thumbnail,excerpt,trackbacks,custom-fields,comments,revisions,page-attributes,post-formats" wp-loop-item>
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" wp-call-function="echo '#portfolioModal-'.get_the_ID()" wp-call-function-set="attr" wp-call-function-set-attr="href">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/cabin.png" class="img-responsive" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-attr-class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item" wp-loop-skip>
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" wp-loop="portfolio2" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Portfolio 2</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 portfolio-item" wp-post-type="portfolio_item2" wp-post-type-name="Portfolio items2" wp-post-type-name-singular="Portfolio item2" wp-post-type-public="true" wp-post-type-supports="title,editor,author,thumbnail,excerpt,trackbacks,custom-fields,comments,revisions,page-attributes,post-formats" wp-loop-item wp-post-type-menu-icon="dashicons-portfolio">
                             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal" wp-call-function="echo '#portfolioModal-'.get_the_ID()" wp-call-function-set="attr" wp-call-function-set-attr="href">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -322,6 +394,41 @@
                                     </li>
                                 </ul>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" wp-the-id="portfolioModal2" wp-loop="modals2" wp-loop-show-empty-text="false" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2 wp-the-title="wp-the-title">Project Title</h2>
+                                <hr class="star-primary" />
+                                <img class="img-responsive img-centered" src="img/portfolio/cabin.png" alt="" wp-the-post-thumbnail="wp-the-post-thumbnail" wp-the-post-thumbnail-attr-class="img-responsive img-centered" />
+                                <p wp-the-content="wp-the-content">Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">April 2014</a></strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-default" type="button" data-dismiss="modal">
                                     <i class="fa fa-times"></i> Close
                                 </button>
                             </div>
