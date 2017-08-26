@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </header>
-            <section id="portfolio" wp-loop="portfolio" wp-loop-post-type-custom="portfolio_item" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" wp-loop-clear-columns>
+            <section id="portfolio" wp-loop="portfolio" wp-loop-post-type-custom="portfolio_item" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" wp-loop-clear-columns class="bkg2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -92,7 +92,7 @@
                                         <i class="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src="img/portfolio/cabin.png" class="img-responsive img-rounded" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-attr-class="img-responsive">
+                                <img src="img/portfolio/cabin.png" class="img-responsive" alt="" wp-the-post-thumbnail wp-the-post-thumbnail-attr-class="img-responsive" wp-the-post-thumbnail-if="true">
                             </a>
                         </div>
                         <div class="col-sm-4 portfolio-item" wp-loop-skip>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </section>
-            <section id="portfolio" wp-loop="portfolio2" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false">
+            <section id="portfolio" wp-loop="portfolio2" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" class="bkg bkg2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -255,7 +255,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section id="contact" wp-loop="contact" wp-loop-show-empty-text="false" wp-loop-post-type-custom="contact_item" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-post-type="post">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -267,7 +267,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                            <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php">
+                            <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php" wp-post-type="contact_item1" wp-post-type-name="Contact Items1" wp-post-type-name-singular="Contact Item1" wp-post-type-public="true" wp-post-type-supports="title,editor,thumbnail,post-formats,page-attributes,revisions,comments,custom-fields,trackbacks,excerpt,author" wp-loop-item>
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
                                         <label>Name</label>

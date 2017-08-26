@@ -85,6 +85,16 @@ function freelancer_init() {
         'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' )
     ));
 
+    register_post_type('contact_item1', array(
+        'labels' => 
+            array(
+                'name' => __( 'Contact Items1', 'freelancer' ),
+                'singular_name' => __( 'Contact Item1', 'freelancer' )
+            ),
+        'public' => true,
+        'supports' => array( 'post-formats', 'page-attributes', 'revisions', 'custom-fields', 'trackbacks', 'thumbnail', 'author', 'excerpt', 'editor', 'comments', 'title' )
+    ));
+
     /* Pinegrow generated Custom Post Types End */
     
     /*
@@ -136,7 +146,7 @@ if ( ! function_exists( 'freelancer_enqueue_scripts' ) ) :
         /* Pinegrow generated Enqueue Scripts Begin */
 
     wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', false, null, true);
+    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.12.4.min.js', false, null, true);
 
     wp_deregister_script( 'bootstrap' );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', false, null, true);
