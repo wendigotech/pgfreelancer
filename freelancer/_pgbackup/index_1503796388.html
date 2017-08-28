@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </header>
-            <section id="portfolio" wp-loop="portfolio" wp-loop-post-type-custom="portfolio_item" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" wp-loop-clear-columns>
+            <section id="portfolio" wp-loop="portfolio" wp-loop-post-type-custom="portfolio_item" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" class="bkg2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </section>
-            <section id="portfolio" wp-loop="portfolio2" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" class="bkg">
+            <section id="portfolio" wp-loop="portfolio2" wp-loop-post-type-custom="portfolio_item2" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-empty-text="false" class="bkg bkg2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -228,25 +228,11 @@
                             <hr class="star-primary">
                         </div>
                     </div>
-                    <php>
-                    //take the content and split it into array
-                    $columns = explode( "<hr />", get_the_content() );
-                    
-                    //if at least one column set $column_1 variable
-                    if(count($columns) > 0) {
-                    	$column_1 = $columns[0];
-                    }
-                    
-                    //if the second column is set, put it into the $column_2 variable
-                    if(count($columns) > 1) {
-                    	$column_2 = $columns[1];
-                    }
-                    </php>
                     <div class="row">
-                        <div class="col-lg-4 col-lg-offset-2" wp-call-function="echo $column_1" wp-call-function-set="content">
+                        <div class="col-lg-4 col-lg-offset-2" wp-the-content>
                             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                         </div>
-                        <div class="col-lg-4" wp-call-function="echo $column_2" wp-call-function-set="content">
+                        <div class="col-lg-4" wp-no-export>
                             <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                         </div>
                         <div class="col-lg-8 col-lg-offset-2 text-center" wp-loop="attachments" wp-loop-post-type="attachment" wp-loop-post-status="any" wp-loop-nopaging="true" wp-loop-category-name="resume">
@@ -255,7 +241,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
+            <section id="contact" wp-loop="contact" wp-loop-show-empty-text="false" wp-loop-post-type-custom="contact_item1" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
@@ -264,10 +250,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-lg-8 col-lg-offset-2" wp-post-type="contact_item1" wp-post-type-name="Contact Items1" wp-post-type-name-singular="Contact Item1" wp-post-type-public="true" wp-post-type-supports="post-formats,page-attributes,revisions,custom-fields,trackbacks,thumbnail,author,excerpt,editor,comments,title" wp-loop-item>
                             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                            <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php">
+                            <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php" wp-the-content>
                                 <div class="row control-group">
                                     <div class="form-group col-xs-12 floating-label-form-group controls">
                                         <label>Name</label>
@@ -619,7 +605,7 @@
             </div>
         </div>
         <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
         <!-- Plugin JavaScript -->

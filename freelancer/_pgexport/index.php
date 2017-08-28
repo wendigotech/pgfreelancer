@@ -74,7 +74,6 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <?php while ( have_posts() ) : the_post(); ?>
-                                    <?php $portfolio_item_number = 0; ?>
                                     <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                                         <div class="col-sm-4 portfolio-item">
                                             <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
@@ -92,8 +91,6 @@ get_header(); ?>
                                                  ?>
                                             </a>
                                         </div>
-                                        <?php $portfolio_item_number++; ?>
-                                        <?php if( $portfolio_item_number % 3 == 0 ) echo '<div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>'; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php endwhile; ?>
@@ -148,27 +145,8 @@ get_header(); ?>
                                 <hr class="star-primary">
                             </div>
                         </div>
-                        <?php
-                            //take the content and split it into array
-                            $columns = explode( "<hr />", get_the_content() );
-
-                            //if at least one column set $column_1 variable
-                            if(count($columns) > 0) {
-                            	$column_1 = $columns[0];
-                            }
-
-                            //if the second column is set, put it into the $column_2 variable
-                            if(count($columns) > 1) {
-                            	$column_2 = $columns[1];
-                            }
-                        ?>
                         <div class="row">
-                            <div class="col-lg-4 col-lg-offset-2">
-                                <?php echo $column_1 ?>
-                            </div>
-                            <div class="col-lg-4">
-                                <?php echo $column_2 ?>
-                            </div>
+                            <?php the_content(); ?>
                             <?php
                                 $attachments_args = array(
                                     'category_name' => 'resume',
